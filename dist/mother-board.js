@@ -49,7 +49,9 @@ exports.MyClass = MyClass;
 
 var _import = require('./import');
 
-console.log((0, _import.square)(5)); //25
+console.log((0, _import.sum)(2, 3));
+
+console.log((0, _import.square)(5));
 
 var cred = {
     name: 'Ritesh Kumar',
@@ -57,6 +59,7 @@ var cred = {
 };
 
 var x = new _import.MyClass(cred);
+
 console.log(x.getName());
 
 },{"./import":1}]},{},[2]);

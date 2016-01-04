@@ -12,6 +12,7 @@
   "scripts": {
     "build": "browserify lib/main.js -t babelify -o dist/mother-board.js",
     "uglifyjs": "uglifyjs dist/mother-board.js > dist/mother-board.min.js",
+    "start": "npm run build && npm run uglifyjs && node dist/mother-board.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
