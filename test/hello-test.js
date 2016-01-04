@@ -12,7 +12,7 @@ describe('Array', function() {
 });
 
 describe('square', function() {
-  it('return b * b', function () {
+  it('should return b * b', function () {
     assert.equal(25, square(5));
   });
 });

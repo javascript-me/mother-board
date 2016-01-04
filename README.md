@@ -27,7 +27,7 @@ node dist/mother-board.min.js
 
 跑单元测试的方法
 
-browserify test/hello-test.js -t babelify -o dist/hello-test-bundle.js && mocha dist/hello-test-bundle.js
+npm run test
 
 注意：
 
@@ -37,4 +37,4 @@ browserify test/hello-test.js -t babelify -o dist/hello-test-bundle.js && mocha 
 
 1、完善build script。
 2、完善grunt。
-=>3、找到对ES6进行单元测试的更好的方法。
+3、(done)找到对ES6进行单元测试的更好的方法。
