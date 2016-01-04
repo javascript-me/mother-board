@@ -27,7 +27,7 @@ node dist/mother-board.min.js
 
 跑单元测试的方法
 
-browserify test/test.js -t babelify -o dist/test-bundle.js && mocha dist/test-bundle.js
+browserify test/hello-test.js -t babelify -o dist/hello-test-bundle.js && mocha dist/hello-test-bundle.js
 
 注意：
 

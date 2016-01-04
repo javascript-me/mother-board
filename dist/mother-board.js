@@ -47,21 +47,21 @@ exports.Student = Student;
 },{}],2:[function(require,module,exports){
 "use strict";
 
-var _import = require('./import');
+var _hello = require('./hello');
 
-console.log((0, _import.sum)(2, 3));
+console.log((0, _hello.sum)(2, 3));
 
-console.log((0, _import.square)(5));
+console.log((0, _hello.square)(5));
 
-console.log(_import.variable);
+console.log(_hello.variable);
 
 var info = {
     name: "Anthony Chen",
     id: 11115078
 };
 
-var student = new _import.Student(info);
+var student = new _hello.Student(info);
 
 console.log(student.getName());
 
-},{"./import":1}]},{},[2]);
+},{"./hello":1}]},{},[2]);

@@ -1123,7 +1123,7 @@ exports.Student = Student;
 },{}],7:[function(require,module,exports){
 'use strict';
 
-var _libImport = require('../lib/import');
+var _libHello = require('../lib/hello');
 
 var assert = require('assert');
 
@@ -1138,8 +1138,8 @@ describe('Array', function () {
 
 describe('square', function () {
   it('return b * b', function () {
-    assert.equal(25, (0, _libImport.square)(5));
+    assert.equal(25, (0, _libHello.square)(5));
   });
 });
 
-},{"../lib/import":6,"assert":1}]},{},[7]);
+},{"../lib/hello":6,"assert":1}]},{},[7]);
