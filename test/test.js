@@ -1,4 +1,4 @@
-import {sum,square,variable,MyClass} from '../lib/import';
+import {sum, square, variable, Student} from '../lib/import';
 
 let assert = require('assert');
 

@@ -21,31 +21,31 @@ var square = function square(b) {
 
 var variable = 110;
 
-var MyClass = (function () {
-    function MyClass(credentials) {
-        _classCallCheck(this, MyClass);
+var Student = (function () {
+    function Student(info) {
+        _classCallCheck(this, Student);
 
-        this.name = credentials.name;
-        this.enrollmentNo = credentials.enrollmentNo;
+        this.name = info.name;
+        this.id = info.id;
     }
 
-    _createClass(MyClass, [{
+    _createClass(Student, [{
         key: "getName",
         value: function getName() {
             return this.name;
         }
     }]);
 
-    return MyClass;
+    return Student;
 })();
 
 exports.sum = sum;
 exports.square = square;
 exports.variable = variable;
-exports.MyClass = MyClass;
+exports.Student = Student;
 
 },{}],2:[function(require,module,exports){
-'use strict';
+"use strict";
 
 var _import = require('./import');
 
@@ -53,13 +53,15 @@ console.log((0, _import.sum)(2, 3));
 
 console.log((0, _import.square)(5));
 
-var cred = {
-    name: 'Ritesh Kumar',
-    enrollmentNo: 11115078
+console.log(_import.variable);
+
+var info = {
+    name: "Anthony Chen",
+    id: 11115078
 };
 
-var x = new _import.MyClass(cred);
+var student = new _import.Student(info);
 
-console.log(x.getName());
+console.log(student.getName());
 
 },{"./import":1}]},{},[2]);
