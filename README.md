@@ -24,3 +24,8 @@ npm run uglifyjs
 跑最小的文件
 
 node dist/mother-board.min.js
+
+注意：
+
+1、 由于在lib/main.js里面使用了ES6的语法，所以package.json中的“script” -> “build”里面必须加入“-t babelify”来对其进行“转编译”。如果不加这个指令，会出现编译错误。
+
