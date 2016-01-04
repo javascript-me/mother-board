@@ -1,4 +1,6 @@
-var assert = require('assert');
+import {sum,square,variable,MyClass} from '../lib/import';
+
+let assert = require('assert');
 
 describe('Array', function() {
   describe('#indexOf()', function () {
@@ -8,3 +10,10 @@ describe('Array', function() {
     });
   });
 });
+
+describe('square', function() {
+  it('return b * b', function () {
+    assert.equal(25, square(5));
+  });
+});
+
