@@ -33,3 +33,8 @@ browserify test/hello-test.js -t babelify -o dist/hello-test-bundle.js && mocha 
 
 1、 由于在lib/main.js里面使用了ES6的语法，所以package.json中的“script” -> “build”里面必须加入“-t babelify”来对其进行“转编译”。如果不加这个指令，会出现编译错误。
 
+待办：
+
+1、完善build script。
+2、完善grunt。
+=>3、找到对ES6进行单元测试的更好的方法。
