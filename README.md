@@ -31,10 +31,7 @@ npm run test
 
 注意：
 
-1、 由于在lib/main.js里面使用了ES6的语法，所以package.json中的“script” -> “build”里面必须加入“-t babelify”来对其进行“转编译”。如果不加这个指令，会出现编译错误。
+1、package.json中的“script” -> “build”里面有片段“[ babelify --presets [es2015] ]”，其中的空格至关重要。
+2、文件.babelrc会被package.json中的“script” -> “test”里面的指令“mocha --compilers js:babel-core/register test”使用到。
 
-待办：
 
-1、完善build script。
-2、完善grunt。
-3、(done)找到对ES6进行单元测试的更好的方法。

@@ -3,7 +3,7 @@ module.exports=function(grunt){
         browserify:{
             dist:{
                 options:{
-                    transform:[['babelify',{'loose':"all"}]]
+                    transform:[['babelify',{'presets':"es2015"}]]
                 },
                 files: {
                     './dist/mother-board.js':['./lib/main.js']
