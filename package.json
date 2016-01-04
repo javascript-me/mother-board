@@ -6,15 +6,15 @@
     "grunt": "^0.4.5"
   },
   "devDependencies": {
-    "babelify": "^6.1.0",
+    "babelify": "^7.2.0",
     "babel-core": "6.3.26",
     "babel-preset-es2015": "6.3.13",
     "grunt-browserify": "^3.8.0"
   },
   "scripts": {
-    "build": "browserify lib/main.js -t babelify -o dist/mother-board.js",
+    "build": "browserify lib/main.js -o dist/mother-board.js -t babelify",
     "uglifyjs": "uglifyjs dist/mother-board.js > dist/mother-board.min.js",
-    "quick-start": "npm run build && node dist/mother-board.min.js",
+    "quick-start": "npm run build && node dist/mother-board.js",
     "start": "npm run build && npm run uglifyjs && node dist/mother-board.min.js",
     "test": "mocha --compilers js:babel-core/register test"
   },
