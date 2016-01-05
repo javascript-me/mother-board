@@ -37,10 +37,10 @@ npm run test
 
 ### 注意：
 
-1、package.json中的“script” -> “build”里面有片段“[ babelify --presets [es2015] ]”，其中的空格至关重要。
-2、文件.babelrc会被package.json中的“script” -> “test”里面的指令“mocha --compilers js:babel-core/register test”使用到。
-3、grunt的命令一定要来自全局，所以要执行“npm install -g grunt-cli”。
-4、package.json里面一定要加入以下这个部分，否则grunt指令跑不起来。
+1. package.json中的“script” -> “build”里面有片段“[ babelify --presets [es2015] ]”，其中的空格至关重要。
+2. 文件.babelrc会被package.json中的“script” -> “test”里面的指令“mocha --compilers js:babel-core/register test”使用到。
+3. grunt的命令一定要来自全局，所以要执行“npm install -g grunt-cli”。
+4. package.json里面一定要加入以下这个部分，否则grunt指令跑不起来。
 
 ```
   "dependencies": {
@@ -50,5 +50,5 @@ npm run test
 
 ### 疑问：
 
-1、package.json里面的dependencies是不是devDependencies的一个子集？
+1. package.json里面的dependencies是不是devDependencies的一个子集？
 
