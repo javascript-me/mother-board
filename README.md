@@ -5,7 +5,7 @@ mother-board
 
 npm install -g grunt-cli
 
-安装开发相关的依赖
+### 安装开发相关的依赖
 
 npm install
 
