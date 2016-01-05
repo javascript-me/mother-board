@@ -65,4 +65,8 @@ var student = new _hello.Student(info);
 
 console.log(student.getName());
 
+window.onload = function () {
+    document.getElementById("banner").innerHTML = "Success! ";
+};
+
 },{"./hello":1}]},{},[2]);
