@@ -1,16 +1,18 @@
 {
   "name": "mother-board",
   "version": "1.0.0",
-  "description": "",
+  "description": "A startup project with basic build and test features. ",
   "dependencies": {
     "grunt": "0.4.5"
   },
   "devDependencies": {
+    "browserify": "12.0.1",
     "babelify": "7.2.0",
     "babel-core": "6.3.26",
     "babel-preset-es2015": "6.3.13",
-    "grunt": "0.4.5",
-    "grunt-browserify": "^3.8.0"
+    "grunt-browserify": "3.8.0",
+    "uglify-js": "2.6.1",
+    "mocha": "2.3.4"
   },
   "scripts": {
     "build": "browserify lib/main.js -o dist/mother-board.js -t [ babelify --presets [es2015] ]",
