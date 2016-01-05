@@ -1,7 +1,11 @@
 mother-board
 ---------------------
 
-安装所有的依赖
+安装全局的依赖
+
+npm install -g grunt-cli
+
+安装开发相关的依赖
 
 npm install
 
@@ -16,6 +20,8 @@ grunt
 跑编译的结果
 
 node dist/mother-board.js
+
+打开dist/index.html文件
 
 生成最小化的文件
 
