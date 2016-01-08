@@ -17,10 +17,6 @@
   "scripts": {
     "build": "browserify lib/main.js -o dist/mother-board.js -t [ babelify --presets [es2015] ]",
     "uglifyjs": "uglifyjs dist/mother-board.js > dist/mother-board.min.js",
-
-    "quick-start": "npm run build && node dist/mother-board.js",
-    "full-start": "npm run build && npm run uglifyjs && node dist/mother-board.min.js",
-
     "test": "mocha --compilers js:babel-core/register test"
   },
   "author": "Anthony Chen",
