@@ -1,6 +1,6 @@
 import {sum, square, variable, Student} from '../lib/hello';
 
-let assert = require('assert');
+var assert = require('assert');
 
 describe('Array', function() {
   describe('#indexOf()', function () {

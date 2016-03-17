@@ -35,7 +35,7 @@ node dist/mother-board.min.js
 
 npm run test
 
-### 注意：
+### 注意事项
 
 1. package.json中的“script” -> “build”里面有片段“[ babelify --presets [es2015] ]”，其中的空格至关重要。
 2. 文件.babelrc会被package.json中的“script” -> “test”里面的指令“mocha --compilers js:babel-core/register test”使用到。
@@ -48,7 +48,11 @@ npm run test
   }
 ```
 
-### 疑问：
+### 待办
+
+1. 在DOM的环境下用Mocha进行单元测试。
+
+### 疑问
 
 1. package.json里面的dependencies是不是devDependencies的一个子集？
 
