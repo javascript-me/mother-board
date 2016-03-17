@@ -46,9 +46,9 @@ exports.variable = variable;
 exports.Student = Student;
 
 },{}],2:[function(require,module,exports){
-"use strict";
+'use strict';
 
-var _hello = require("./hello");
+var _hello = require('./hello');
 
 console.log((0, _hello.sum)(2, 3));
 
@@ -65,8 +65,13 @@ var student = new _hello.Student(info);
 
 console.log(student.getName());
 
-window.onload = function () {
-    document.getElementById("banner").innerHTML = "Success! ";
-};
+if (typeof window != 'undefined') {
+    window.onload = function () {
+        document.getElementById("banner").innerHTML = "Success! ";
+    };
+}
+//if (window == undefined) {
+
+//}
 
 },{"./hello":1}]},{},[2]);
