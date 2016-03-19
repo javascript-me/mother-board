@@ -23,6 +23,8 @@ node dist/mother-board.js
 
 ### 打开dist/index.html文件
 
+chrome dist/index.html 或者 firefox dist/index.html
+
 ### 生成最小化的文件
 
 npm run uglifyjs
